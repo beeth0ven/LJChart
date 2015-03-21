@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LJChartView.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet LJChartView *chartView;
+@property (nonatomic, strong) UITableView *tbv;
 
 @end
 

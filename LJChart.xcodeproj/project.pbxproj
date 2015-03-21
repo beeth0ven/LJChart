@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0BE0E31AB1897B00FBEA78 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0BE0E21AB1897B00FBEA78 /* NSString+Extension.m */; };
 		BD34A8DC1AADE76400BC4691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD34A8DB1AADE76400BC4691 /* main.m */; };
 		BD34A8DF1AADE76400BC4691 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD34A8DE1AADE76400BC4691 /* AppDelegate.m */; };
 		BD34A8E21AADE76400BC4691 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD34A8E11AADE76400BC4691 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		BD34A8E71AADE76400BC4691 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD34A8E61AADE76400BC4691 /* Images.xcassets */; };
 		BD34A8EA1AADE76400BC4691 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD34A8E81AADE76400BC4691 /* LaunchScreen.xib */; };
 		BD34A8F61AADE76400BC4691 /* LJChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD34A8F51AADE76400BC4691 /* LJChartTests.m */; };
+		BD34A9011AADE91C00BC4691 /* LJChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD34A9001AADE91C00BC4691 /* LJChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD0BE0E11AB1897B00FBEA78 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		BD0BE0E21AB1897B00FBEA78 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		BD34A8D61AADE76400BC4691 /* LJChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD34A8DA1AADE76400BC4691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD34A8DB1AADE76400BC4691 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		BD34A8EF1AADE76400BC4691 /* LJChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD34A8F41AADE76400BC4691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD34A8F51AADE76400BC4691 /* LJChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJChartTests.m; sourceTree = "<group>"; };
+		BD34A8FF1AADE91C00BC4691 /* LJChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJChartView.h; sourceTree = "<group>"; };
+		BD34A9001AADE91C00BC4691 /* LJChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,13 @@
 		BD34A8D81AADE76400BC4691 /* LJChart */ = {
 			isa = PBXGroup;
 			children = (
-				BD34A8DD1AADE76400BC4691 /* AppDelegate.h */,
-				BD34A8DE1AADE76400BC4691 /* AppDelegate.m */,
 				BD34A8E01AADE76400BC4691 /* ViewController.h */,
 				BD34A8E11AADE76400BC4691 /* ViewController.m */,
 				BD34A8E31AADE76400BC4691 /* Main.storyboard */,
-				BD34A8E61AADE76400BC4691 /* Images.xcassets */,
-				BD34A8E81AADE76400BC4691 /* LaunchScreen.xib */,
+				BD34A8FF1AADE91C00BC4691 /* LJChartView.h */,
+				BD34A9001AADE91C00BC4691 /* LJChartView.m */,
+				BD0BE0E11AB1897B00FBEA78 /* NSString+Extension.h */,
+				BD0BE0E21AB1897B00FBEA78 /* NSString+Extension.m */,
 				BD34A8D91AADE76400BC4691 /* Supporting Files */,
 			);
 			path = LJChart;
@@ -96,6 +102,10 @@
 		BD34A8D91AADE76400BC4691 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD34A8E61AADE76400BC4691 /* Images.xcassets */,
+				BD34A8E81AADE76400BC4691 /* LaunchScreen.xib */,
+				BD34A8DD1AADE76400BC4691 /* AppDelegate.h */,
+				BD34A8DE1AADE76400BC4691 /* AppDelegate.m */,
 				BD34A8DA1AADE76400BC4691 /* Info.plist */,
 				BD34A8DB1AADE76400BC4691 /* main.m */,
 			);
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0BE0E31AB1897B00FBEA78 /* NSString+Extension.m in Sources */,
 				BD34A8E21AADE76400BC4691 /* ViewController.m in Sources */,
 				BD34A8DF1AADE76400BC4691 /* AppDelegate.m in Sources */,
 				BD34A8DC1AADE76400BC4691 /* main.m in Sources */,
+				BD34A9011AADE91C00BC4691 /* LJChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +360,7 @@
 				INFOPLIST_FILE = LJChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,6 +371,7 @@
 				INFOPLIST_FILE = LJChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -414,6 +428,7 @@
 				BD34A8FB1AADE76400BC4691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD34A8FC1AADE76400BC4691 /* Build configuration list for PBXNativeTarget "LJChartTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +437,7 @@
 				BD34A8FE1AADE76400BC4691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
